@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  /* Реєструємо нові піксельні шрифти */
+  --font-pixel-retro: "Press Start 2P", system-ui;
+  --font-pixel-large: "VT323", monospace;
+
+  /* Оптимізована анімація для фінальної картки */
+  --animate-fade-in: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px) scale(0.98); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+  }
+}
+
+/* Прибираємо розмиття при масштабуванні піксельних картинок, якщо такі будуть */
+img {
+  image-rendering: pixelated;
+}
