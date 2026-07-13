@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
+  base: '/pj-1/', // Перевір, щоб тут було саме так, з двома слешами
   plugins: [react()],
-  base: '/pj-1/',
-})
+})git add .
